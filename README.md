@@ -1,3 +1,6 @@
+<h2>About this project</h2>
+<p>This is my first Laravel project. I am using this web app in order to develop my Laravel skills.</p>
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
