@@ -1,6 +1,6 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
+    "name": "mynameisvasco/Sidebook",
+    "description": "Sidebook is a open-source social network.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
