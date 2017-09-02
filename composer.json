@@ -1,10 +1,6 @@
 {
     "name": "mynameisvasco/Sidebook",
-<<<<<<< HEAD
     "description": "Sidebook is an open-source social network where you can share your own story.",
-=======
-    "description": "Sidebook is a open-source social network.",
->>>>>>> e67b17de0bb9faec4cf10e639c381ed0e94a3315
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
