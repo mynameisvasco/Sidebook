@@ -15,11 +15,11 @@
                 @foreach($stories as $story)
                     <tr>
                         <td>{{$story->title}}</td>
-                        <td><a href="/stories/{{$story->id}}/edit" class="btn btn-primary">Edit</a></td>
+                        <td><a href="/stories/{{$story->id}}/edit" class="btn btn-primary btn-mystory"><i class="fa fa-edit"></i> Edit</a></td>
                         <td>
-                            {!!Form::open(['action' => ['StoriesController@destroy', $story->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+                            {!!Form::open(['action' => ['StoriesController@destroy', $story->id], 'method' => 'POST'])!!}
                                 {{Form::hidden('_method', 'DELETE')}}
-                                {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+                                {{Form::button('<i class="fa fa-trash"></i> Delete', ['class' => 'btn btn-danger btn-mystory', 'type' => 'submit'])}}
                             {!! Form::close() !!}
                         </td>
                     </tr>

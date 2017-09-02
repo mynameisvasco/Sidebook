@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Like extends Model
 {
-    public function user(){
-        
+    public function user()
+    {    
         return $this->belongTo('App\User');
     }
 
-    public function story(){
-        
+    public function story()
+    {    
         return $this->belongTo('App\Story');
     }
 }

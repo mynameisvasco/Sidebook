@@ -20,16 +20,17 @@
                                 @if(!Auth::guest())
                                     @if(Auth::user()->id == $story->user_id)
                                         <div class="col-md-1">
-                                            <a href="/stories/{{$story->id}}/edit" class="btn btn-primary">Edit story</a>
+                                            <a href="/stories/{{$story->id}}/edit" class="btn btn-primary btn-story"><i class="fa fa-edit"></i> Edit story</a>
                                         </div>
-                                        &nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
                                         <div class="col-md-1">
                                             {!!Form::open(['action' => ['StoriesController@destroy', $story->id], 'method' => 'POST'])!!}
                                                 {{Form::hidden('_method', 'DELETE')}}
                                                 {!! Form::hidden('story_id', $story->id) !!} 
-                                                {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+                                                {{Form::button('<i class="fa fa-trash"></i> Delete', ['class' => 'btn btn-danger btn-story', 'type' => 'submit'])}}
                                             {!! Form::close() !!}
                                         </div>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     @endif
                                 @endif
                                 @foreach($like as $likes)
@@ -38,17 +39,18 @@
                                                 {!!Form::open(['action' => ['LikesController@unlike', $story->id], 'method' => 'POST'])!!}
                                                     {!! Form::hidden('_method', 'PUT') !!} 
                                                     {!! Form::hidden('story_id', $story->id) !!} 
-                                                    {{Form::submit('Unlike', ['class' => 'btn btn-success'])}}
+                                                    {{Form::button('<i class="fa fa-heart-o"></i> Unlike', ['class' => 'btn btn-success btn-story', 'type' => 'submit'])}}
                                                 {!! Form::close() !!}
                                             </div>
                                         @else
-                                            <div class="col-md-1">
+                                            <div class="col-md-2">
                                                 {!!Form::open(['action' => ['LikesController@like', $story->id], 'method' => 'POST'])!!}
                                                     {!! Form::hidden('_method', 'PUT') !!}
                                                     {!! Form::hidden('story_id', $story->id) !!}   
-                                                    {{Form::submit('Like', ['class' => 'btn btn-success'])}}
+                                                    {{Form::button('<i class="fa fa-heart"></i> Like', ['class' => 'btn btn-success btn-story', 'type' => 'submit'])}}
                                                 {!! Form::close() !!}
                                             </div>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         @endif
                                     @endforeach
                                 @if(empty($likes))
@@ -56,7 +58,7 @@
                                         {!!Form::open(['action' => ['LikesController@like', $story->id], 'method' => 'POST'])!!}
                                         {!! Form::hidden('_method', 'PUT') !!}
                                         {!! Form::hidden('story_id', $story->id) !!} 
-                                        {{Form::submit('Like', ['class' => 'btn btn-success'])}}
+                                        {{Form::button('<i class="fa fa-heart"></i> Like', ['class' => 'btn btn-success btn-story', 'type' => 'submit'])}}
                                         {!! Form::close() !!}
                                     </div>
                                 @endif

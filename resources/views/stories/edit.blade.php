@@ -24,7 +24,7 @@
                         </div>
                         <div class="col-md-4">
                             {!! Form::hidden('_method', 'PUT') !!} 
-                            {!! Form::submit('Submit', ['class' => 'btn btn-primary']) !!}
+                             {{Form::button('<i class="fa fa-save"></i> Save', ['class' => 'btn btn-primary', 'type' => 'submit'])}}
                         </div>
                     {!! Form::close() !!}
 

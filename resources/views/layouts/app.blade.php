@@ -21,6 +21,7 @@
 
     <!-- Custom styles for this template -->
     <link href="http://getbootstrap.com/docs/4.0/examples/jumbotron/jumbotron.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
   </head>
 
     <body>

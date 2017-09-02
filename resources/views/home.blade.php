@@ -20,9 +20,9 @@
                             @foreach($stories as $story)
                                 <div class="col-md-4">
                                     <h2 style="font-size:40px" class="display-4">{{$story->title}}</h2>
-                                    <p>{!!$story->body!!}</p>
+                                    <p>{!!str_limit($story->body,100)!!}</p>
                                     <p><i style="color:#e74c3c" class="fa fa-heart"></i> {!!$story->likes!!}
-                                     <p><a class="btn btn-primary" href="/stories/{{$story->id}}" role="button">Read More &raquo;</a></p>
+                                    <p><a class="btn btn-primary" href="/stories/{{$story->id}}" role="button">Read More &raquo;</a></p>
                                 </div>
                             @endforeach
                         @else
