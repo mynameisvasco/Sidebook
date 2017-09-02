@@ -13,5 +13,3 @@
 <h2>Will Sidebook be updated?</h2>
 
 <p>Yes. I am still learning this framework, so in a near future i am planning to develop new features and upgrade the current ones.</p>
-
-<p>Yes. I am still learning this framework, so in a near future i am planning to develop new features and upgrade the current ones.</p>
