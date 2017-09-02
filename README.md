@@ -6,6 +6,7 @@
   <li>Login/Register system</li>
   <li>Post stories</li>
   <li>Like stories</li>
+  <li>Discover random stories</li>
   <li>Dashboard where you can edit or delete your stories</li>
 </ul>
 
