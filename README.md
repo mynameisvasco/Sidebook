@@ -6,12 +6,10 @@
   <li>Login/Register system</li>
   <li>Post stories</li>
   <li>Like stories</li>
+  <li>Discover random stories</li>
   <li>Dashboard where you can edit or delete your stories</li>
 </ul>
 
 <h2>Will Sidebook be updated?</h2>
-<<<<<<< HEAD
+
 <p>Yes. I am still learning this framework, so in a near future i am planning to develop new features and upgrade the current ones.</p>
-=======
-<p>Yes. I am still learning this framework, so in a near future i am planning to develop new features and upgrade the current ones.</p>
->>>>>>> e67b17de0bb9faec4cf10e639c381ed0e94a3315
